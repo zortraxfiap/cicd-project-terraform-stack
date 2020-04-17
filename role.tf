@@ -18,7 +18,7 @@ resource "aws_iam_role" "ecr_readOnly_role" {
 EOF
 
   tags = {
-      Name = "ecr_readOnly_profile"
+      Name = "ecr_readOnly_role"
   }
 }
 
@@ -28,7 +28,7 @@ resource "aws_iam_instance_profile" "ecr_readOnly_profile" {
 }
 
 resource "aws_iam_role_policy" "ecr_readOnly_policy" {
-  name = "${var.filename}"
+  name = "ecr_readOnly_policy"
   role = "${aws_iam_role.ecr_readOnly_role.id}"
 
   policy = <<EOF
