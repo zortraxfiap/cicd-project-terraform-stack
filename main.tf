@@ -1,3 +1,10 @@
+  
+#filename (details)
+module "localfile" {
+  source = "./modules/file"
+  filename = "FIAP-28ATI"
+}
+
 # Specify the provider and access details
 provider "aws" {
   region = "${var.aws_region}"
