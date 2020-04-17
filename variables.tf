@@ -29,4 +29,3 @@ variable "INSTANCE_USERNAME" {
 }
 variable "ECR_REGISTRY" {
 }
-© 2020 GitHub, Inc.
