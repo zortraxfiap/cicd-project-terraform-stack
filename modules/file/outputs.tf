@@ -1,5 +1,3 @@
-9 lines (8 sloc)  327 Bytes
-  
 output "filename" {
   value = "${local_file.test.filename}"
   description = "The name of the file to be exported with the extension, e.g. in default workspace = foo-dev.txt, in prod workspace = foo-prod.txt"
