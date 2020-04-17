@@ -1,5 +1,5 @@
 resource "aws_iam_role" "ecr_readOnly_role" {
-  name = "${var.filename}"
+  name = "ecr_readOnly_role"
 
   assume_role_policy = <<EOF
 {
